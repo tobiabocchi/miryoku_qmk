@@ -1,0 +1,10 @@
+name: 'My crkbd'
+on:
+  - workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      keyboard: '["crkbd"]'
+      clipboard: '["mac"]'
+# TODO: Add gaming layer
