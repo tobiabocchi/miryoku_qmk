@@ -5,6 +5,5 @@ jobs:
   build:
     uses: ./.github/workflows/main.yml
     with:
-      keyboard: '["crkbd"]'
+      keyboard: '["crkbd/rev4_1/mini"]'
       clipboard: '["mac"]'
-# TODO: Add gaming layer
