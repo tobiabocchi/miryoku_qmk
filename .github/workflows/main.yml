@@ -117,6 +117,8 @@ jobs:
           artifact_build_name=`echo $artifact_build_name | tr ' ' '-'`
           echo "artifact_build_name=$artifact_build_name" >> $GITHUB_OUTPUT
           echo "artifact_dir=$artifact_dir" >> $GITHUB_OUTPUT
+      - name: Debug
+        run: qmk list-keyboards
       - name: Build
         run: qmk compile -kb ${{ matrix.keyboard }} -km manna-harbour_miryoku
       - name: Copy firmware
